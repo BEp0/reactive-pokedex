@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "923a8d86-eb36-461f-97c0-ca9e9817a379",
+		"name": "reactive-pokedex-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22121835"
+	},
+	"item": [
+		{
+			"name": "all pokemons on pokedex",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pokemons",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pokemons/events",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pokemons",
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a pokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/pokemons/63597f5deb379a02bd79988c",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pokemons",
+						"63597f5deb379a02bd79988c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create pokemon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bulbasaur\",\r\n    \"type\": \"GRASS\",\r\n    \"weaknesses\": \"FIRE\",\r\n    \"weight\": 6.9,\r\n    \"ultimate\": \"Overgrow\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/pokemons",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
